@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="2.css">
+    <script src="scripts/cart.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+
+
+</head>
+<header>
+    <div class="header-container">
+        <div class="header-top">
+            <div class="lemonimg">
+                <img src="images/logo.jpeg" alt="freshplus_logo">
+                <img src="images/liang.png" alt="banner" id="liang">
+            </div>
+            <div class="login">
+                <ul>
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Log_In.html">Sign In</a></button>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Shopping_Cart.html">Shopping Cart</a></button>
+                    </div>
+                </ul>
+            </div>
+
+
+            <br>
+            <div class="searchbar">
+                <img src=images/1.png alt="lemon_icon" class="mg">
+                <input type="text" id="search" value="Search" onfocus="if(value=='Search')value=''" onblur="if(!value)value='Search'" name="keyword">
+                <img src=images/search.png alt="search_icon" class="mcp">
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<!----------- nav ----------->
+<nav>
+    <div>
+        <div class="nav-line">
+            <ul>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Home.html">Home</a></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Fruits">Fruits</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details.html">Grape</a>
+                        <a href="Details.html">Mangosteen</a>
+                        <a href="Details.html">Lemon</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Vegetables">Vegetables</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details1.html">Carrot</a>
+                        <a href="Details1.html">Bok Choi</a>
+                        <a href="Details1.html">Tomato</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Meat">Meat</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details2.html">Fish</a>
+                        <a href="Details2.html">Chicken</a>
+                        <a href="Details2.html">Shrimp</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Condiments">Condiments</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details3.html">Olive oil</a>
+                        <a href="Details3.html">Soy sauce</a>
+                        <a href="Details3.html">Black pepper</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Drinks">Drinks</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details4.html">Apple juice</a>
+                        <a href="Details4.html">Fruit tea</a>
+                        <a href="Details4.html">Orange juice</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Dairy">Dairy</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details5.html">Milk</a>
+                        <a href="Details5.html">Egg</a>
+                        <a href="Details5.html">Cheese</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <main>
+        <section>
+
+            <br>
+            <form method="GET" id="placeOrder" name="placeOrder">
+                <input type="hidden" name="itemId" value=101>
+                <input type="hidden" name="price" value=8.5>
+                <div id="main">
+                    <div id="left">
+                        <img src="images/img101.jpg" alt="Grape">
+                    </div>
+                    <div id="r">
+                        <p id="information"> Grape <br> &#36;8.5 <br>
+                            <p>
+                                <p id="size">
+                                    Rating: 89% user recommaned this product
+                                </p>
+                                <br>
+                                <br>
+                                <div>
+                                    Quantity
+                                    <label for="quantity"></label>
+                                    <select id="quantity" name="quantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select> KG
+                                    <br><br>
+
+                                </div>
+                                <input type="button" class="order" value="Add to Cart" onclick="order();"></p>
+            </form>
+            <p id="description">
+            </p>
+            </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <div class="demo">
+        <img id="navp1" src="images/photo2.jpg" alt="alway_fresh">
+
+        <img id="navp1" src="images/photo4.jpg" alt="Organic">
+
+        <img id="navp1" src="images/photo1.jpg" alt="fast_delivery">
+    </div>
+    <footer>
+        <h2>Fresh Plus+</h2>
+        <Address>
+            123 Fresh Ave
+            <br>
+            Ottawa, Ontario
+            <br>
+            (613) 123-PLUS
+            <br>
+            <a href="mailto:freshplus@superfresh.ca">freshplus@superfresh.ca</a>  
+        </Address>
+    </footer>
+</body>
+
+</html>
