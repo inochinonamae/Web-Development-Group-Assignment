@@ -1,5 +1,4 @@
-fetch('https://github.com/inochinonamae/ProductRestAPI',
-    { method: 'POST' }
+fetch('https://github.com/inochinonamae/ProductRestAPI'
 )
     .then(res => {
         if (res.ok) {
