@@ -79,6 +79,7 @@
 #signin, #signup{
     text-align: center;
     font-size: 15pt;
+    color: darkslategray;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
 }
@@ -87,17 +88,15 @@
     padding-top: 2%;
     width: 48%;
     float:left;
-    height: 400px;
-    border: solid lightsteelblue;
-    background-color:lightgoldenrodyellow;
+    height: 350px;
+    background-color:rgb(233, 243, 248);
 }
 .second {
     padding-top: 2%;
     width: 48%;
     float:right;
-    height: 400px;
-    border: solid lightsteelblue;
-    background-color: lightgoldenrodyellow;
+    height: 350px;
+    background-color: rgb(233, 243, 248);
 }
 
 /* table */

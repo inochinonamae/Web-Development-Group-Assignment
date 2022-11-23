@@ -89,8 +89,8 @@ li{
 	width: 1000px;
 	height: 50px;
 	margin-top: 30px;
-	background-color: #ffc9a6;
-	border-radius: 16px 16px 16px 16px;
+	background-color: rgb(233, 243, 248);
+
 }
 
 .balance_ul1,.balance_ul1>li,.balance_ul2>li{
@@ -109,14 +109,16 @@ li{
 .butt{
 	width: 120px;
 	height: 50px;
-	background-color: #ddf572;
-	border: 0px;
-	color: rgb(6, 7, 7);
+	background-color: rgb(255, 255, 255);
+	border:1px solid;
+	border-color: darkslategray;
+	
 	font-size: 20px;
 	float: right;
 	font-weight: bold;
+	color: rgb(255, 255, 255);
 	margin-right: 15px;
-	border-radius: 16px 16px 16px 16px;
+	
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;	
 }
 
@@ -126,7 +128,7 @@ li{
 
 	background-color: #ddf572;
 	border: 0px;
-	color: rgb(6, 7, 7);
+	color: rgb(255, 255, 255);
 	font-size: 20px;
  	font-weight: bold;
 	border-radius: 16px 16px 16px 16px;
@@ -135,8 +137,7 @@ li{
 .shoppnav{
 	width: 1000px;
 	height: 50px;
-	background-color: #ffc9a6;
-	border-radius: 16px 16px 16px 16px;
+	background-color: rgb(233, 243, 248);
 	margin-top: 30px;
 	border-top: 3px solid rgb(255, 253, 253);
 }
