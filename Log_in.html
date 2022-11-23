@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="2.css">
+    <script src = "scripts/Log_in.js"></script>
+    
+    
+</head>
+<header>
+    <div class="header-container"> 
+        <div class="header-top">
+            <div class="lemonimg">
+                <img src="images/logo.jpeg" alt="freshplus_logo">
+                <img src="images/liang.png" alt="banner" id="liang">
+            </div>
+            <div class="login">
+                <ul>
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Log_In.html">Sign In</a></button>
+                    </div> 
+                    
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Shopping_Cart.html">Shopping Cart</a></button>
+                    </div>
+                </ul>
+            </div>
+                
+                
+                <br>
+                <div class="searchbar">
+                    <img src=images/1.png alt="lemon_icon" class="mg">
+                    <input type="text" id="search" value="Search" 
+                    onfocus="if(value=='Search')value=''"
+                    onblur="if(!value)value='Search'" 
+                    name="keyword"> 
+                    <img src=images/search.png alt="search_icon" class="mcp">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!----------- nav ----------->
+<nav>
+    <div>
+        <div class="nav-line">
+            <ul>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Home.html">Home</a></button>
+                </div>
+                <div class="dropdown">
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Vegetables">Women</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details1.html">Jackets</a>
+                        <a href="section_woman_footware.html">Footwear</a>
+                        <a href="Details1.html">Accessories</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Condiments">Man</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details2.html">Jackets</a>
+                        <a href="Details2.html">Footwear</a>
+                        <a href="Details2.html">Accessories</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="Sections.html#Dairy">Clearance</a></button>
+                    <div class="dropdown-content">
+                        <a href="Details4.html">Winter Clearance</a>
+                        <a href="Details4.html">Equipment</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<body>
+    <section id="signin">    
+        <div class="first">
+            <h2>
+                <b>Sign In</b>
+            </h2>         
+       
+            <form>
+                <fieldset>
+                <label class="lab" for="email"><b>Email: </b></label>
+                <input type="email" id="email" name="email">
+                <br>
+                <br>
+                <label class="lab" for="password"><b>Password: </b></label>
+                <input type="password" id="password" name="password">
+                <br>
+                <br>
+            </form>
+            <!-- <button type="button">Sign In</button> -->
+            <input type="button" id = "button" onclick="myFunctionSign()" value="Sign In">
+        </div>       
+    </section>
+
+    <section id="signup">
+        <div class="second">
+            <h2>
+                <b>Create Account<b>
+            </h2>
+            <form>
+                <table>
+                    <tr>
+                      <td>First Name</td>
+                      <td>
+                        <input type = "text" name = "firstName">
+                        <span class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Last Name</td>
+                      <td>
+                        <input type = "text" name = "lastName">
+                        <span class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Email Address</td>
+                      <td>
+                        <input type="email" name="email">
+                        <span class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Password</td>
+                      <td>
+                        <input type="password" name="password">
+                        <span class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address 1</td>
+                      <td>
+                        <input type = "text" name = "address1">
+                        <span class = "alert"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address 2</td>
+                      <td>
+                        <input type = "text" name = "address2">      
+                      </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                      <td>Postal Code</td>
+                      <td>
+                        <input type = "text" name = "postalcode">
+                        <span class = "alert"></span>
+                      </td>
+                    </tr> 
+                </table>
+            </form>
+            <br>
+            <input type="button" id = "button" onclick="myFunction()" value="Submit">
+            <br><br>
+
+        </div>       
+        
+        
+    </section>
+
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+    <footer>
+        <h2>Fresh Plus+</h2>
+        <Address>
+            123 Fresh Ave
+            <br>
+            Ottawa, Ontario
+            <br>
+            (613) 123-PLUS
+            <br>
+            <a href="mailto:freshplus@superfresh.ca">freshplus@superfresh.ca</a>  
+        </Address>
+    </footer> 
+  
+</body>
+</html>
+
+
+
