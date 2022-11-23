@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<head>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="1.css">
+    
+    <script src="scripts/Fetch product information.js"></script>
+</head>
+
+<!----------- body ----------->
+
+<body>
+    <header>
+        <div class="header-container">
+            <!-- <div class="header-top"> -->
+            <div class="logoimg">
+                <img src="images/logo.png" alt="SportAll_Logo">
+            </div>
+
+            <div class="searchbar">
+                <!-- <img src=images/1.png alt="lemon_icon" class="mg"> -->
+                <input type="text" id="search" value="Search" onfocus="if(value=='Search')value=''"
+                    onblur="if(!value)value='Search'" name="keyword">
+                <img src=images/search.png alt="search_icon" class="mcp">
+            </div>
+
+            <div class="login">
+                <ul>
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Log_In.html"><i class="fa-solid fa-user"></i></a></button>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="lonbutton"><a href="Shopping_Cart.html"><i
+                                    class="fa-solid fa-cart-shopping"></i></a></button>
+                    </div>
+                </ul>
+            </div>
+
+
+
+            <!-- </div> -->
+        </div>
+        </div>
+    </header>
+    <!----------- nav ----------->
+    <nav>
+        <div>
+            <div class="nav-line">
+                <ul>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="Home.html">Home</a></button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="Sections.html#Meat">All Sports</a></button>
+                        <div class="dropdown-content">
+                            <a href="Details.html">Team Sports</a>
+                            <a href="Details.html">Cycling</a>
+                            <a href="Details.html">Scooter & Recreational Sports</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="Sections.html#Vegetables">Women</a></button>
+                        <div class="dropdown-content">
+                            <a href="Details1.html">Jackets</a>
+                            <a href="Details1.html">Footwear</a>
+                            <a href="Details1.html">Accessories</a>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="Sections.html#Condiments">Man</a></button>
+                        <div class="dropdown-content">
+                            <a href="Details2.html">Jackets</a>
+                            <a href="Details2.html">Footwear</a>
+                            <a href="Details2.html">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="Sections.html#Drinks">Kids</a></button>
+                        <div class="dropdown-content">
+                            <a href="Details3.html">Jackets</a>
+                            <a href="Details3.html">Footwear</a>
+                            <a href="Details3.html">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="Sections.html#Dairy">Clearance</a></button>
+                        <div class="dropdown-content">
+                            <a href="Details4.html">Winter Clearance</a>
+                            <a href="Details4.html">Equipment</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div>
+
+        <div id="BJ">
+            <img src="images/sportPic1.webp" id="img" />
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
+        
+            <br>
+            <!----------- footer ----------->
+            <br>
+            <footer>
+                <h2>Fresh Plus+</h2>
+                <Address>
+                    123 Fresh Ave
+                    <br>
+                    Ottawa, Ontario
+                    <br>
+                    (613) 123-PLUS
+                    <br>
+                    <a href="mailto:freshplus@superfresh.ca">freshplus@superfresh.ca</a>
+                </Address>
+            </footer>
+
+</body>
+
+</html>
