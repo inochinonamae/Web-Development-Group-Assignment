@@ -6,7 +6,9 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- CSS Style -->
     <link rel="stylesheet" href="1.css">
     <script src="scripts/poster.js"></script>
@@ -15,48 +17,18 @@
 <!----------- body ----------->
 
 <body>
-    <header>
-        <div class="header-container">
-            <!-- <div class="header-top"> -->
-            <div class="logoimg">
-                <img src="images/logo.png" alt="SportAll_Logo">
-            </div>
-
-            <div class="searchbar">
-                <!-- <img src=images/1.png alt="lemon_icon" class="mg"> -->
-                <input type="text" id="search" value="Search" onfocus="if(value=='Search')value=''"
-                    onblur="if(!value)value='Search'" name="keyword">
-                <img src=images/search.png alt="search_icon" class="mcp">
-            </div>
-
-            <div class="login">
-                <ul>
-                    <div class="dropdown">
-                        <button class="lonbutton"><a href="Log_In.html"><i class="fa-solid fa-user"></i></a></button>
-                    </div>
-
-                    <div class="dropdown">
-                        <button class="lonbutton"><a href="Shopping_Cart.html"><i
-                                    class="fa-solid fa-cart-shopping"></i></a></button>
-                    </div>
-                </ul>
-            </div>
-
-
-
-            <!-- </div> -->
-        </div>
-        </div>
-    </header>
+    <!-- Header place_holder -->
+    <div id="header-placeholder"></div>
+ 
     <!----------- nav ----------->
     <nav>
         <div>
             <div class="nav-line">
                 <ul>
-                    <div class="dropdown">
-                        <button class="dropbtn"><a href="Home.html">Home</a></button>
+                    <div class="dropdown categories">
+                        <button class="dropbtn"><a href="index.html">Home</a></button>
                     </div>
-                    <div class="dropdown">
+                    <!-- <div class="dropdown">
                         <button class="dropbtn"><a>Women</a></button>
                         <div class="dropdown-content">
                             <a href="section_women_jackets.html">Jackets</a>
@@ -81,7 +53,7 @@
                             <a href="section_c_w.html">Winter Clearance</a>
                             <a href="section_c_e.html">Equipment</a>
                         </div>
-                    </div>
+                    </div> -->
                 </ul>
             </div>
         </div>
@@ -90,27 +62,20 @@
 
     <div>
 
-        <div id="BJ">
-            <img src="images/sportPic1.webp" id="img" />
+        <div id="ScrollAnimation">
+            <img src="images/sportPic1.webp" id="Scrollimg" />
         </div>
 
         <br><br><br><br><br><br><br><br><br>
-        
-            <br>
-            <!----------- footer ----------->
-            <br>
-            <footer>
-                <h2>Fresh Plus+</h2>
-                <Address>
-                    123 Fresh Ave
-                    <br>
-                    Ottawa, Ontario
-                    <br>
-                    (613) 123-PLUS
-                    <br>
-                    <a href="mailto:freshplus@superfresh.ca">freshplus@superfresh.ca</a>
-                </Address>
-            </footer>
+
+        <br>
+        <!----------- footer ----------->
+        <div id="footer-placeholder"></div>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script src="scripts/init.js"></script>
 
 </body>
 

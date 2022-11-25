@@ -20,10 +20,10 @@ body {
     background-color: rgb(233, 243, 248);
 }
 
-.row {
+/* .row {
     margin-right: -15px;
     margin-left: -15px;
-}
+} */
 
 .welcome {
     text-align: left;
@@ -41,11 +41,11 @@ body {
     height: 15px;
 }
 
-.logoimg img {
+/* .logoimg img {
     height: 50px;
     padding-top: 15px;
     padding-left: 5%;
-}
+} */
 
 .login {
     /* float: right; */
@@ -213,12 +213,17 @@ a:focus {
 
 
 /*-------------- pics -----------*/
-#BJ {
+#ScrollAnimation {
     text-align: center;
+    width: 100%;
 }
 
-#img {
-    width: 100%
+#Scrollimg {
+    width: 100%;
+}
+
+.img_fluid {
+    max-width: 500px;
 }
 
 #ol {
@@ -229,25 +234,12 @@ a:focus {
     right: 0px;
 }
 
-li img {
-    height: 25px;
-}
+/* img {
+    height: 70%;
+   
+} */
 
-/* display_individual_sectio */
-
-/*.display_individual_section {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
-    grid-auto-rows: 100px;
-    grid-template-areas:
-      "a a a a b b b b"
-      "a a a a b b b b"
-      "c c c c d d d d"
-      "c c c c d d d d";
-    align-items: start;
-*/
-.img1 {
+/* .img1 {
     height: 70%;
     width: 70%;
 }
@@ -265,23 +257,23 @@ li img {
 .img4{
     height: 70%;
     width: 70%;
-}
+} */
 
 
 .display_individual_container img {
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
-.display_individual_container .womenfootwear_1 li, .display_individual_container .womenfootwear_2 li{
-    width:50%;
-    height: 100%;
+.display_individual_container, .products, .display_individual_container {
+    /* width:50%;
+    height: 100%; */
     text-align: center;
 }
-.display_individual_container .womenfootwear_1, .display_individual_container .womenfootwear_2 {
+/* .display_individual_container .womenfootwear_1, .display_individual_container  {
    display: flex;
     display: -webkit-flex;
-}
+} */
 
 
 /*----------- Sections -----------*/
@@ -293,7 +285,7 @@ li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#guide img {
+#guide  {
     height: 160px;
     width: 170px;
 }
