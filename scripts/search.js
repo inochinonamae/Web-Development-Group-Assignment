@@ -1,10 +1,24 @@
-fetch("https://github.com/inochinonamae/ProductRestAPI/blob/main/product.JSON")
-    .then((response) => {
-        console.log("Yes");
-        console.log(response);
-        return response.json();
-    })
-    .then((jsonData) => {
-        console.log("We got all")
-        console.log(jsonData)
-    });
+$(document).ready(function(){
+  $.ajaxSetup({ cache: false });
+  $('#search').keyup(function(){
+   $('#result').html('');
+   $('#state').val('');
+   var searchField = $('#search').val();
+   var expression = new RegExp(searchField, "i");
+   url = 
+   $.getJSON('https://api.jsonbin.io/v3/b/6383249ea3c728450ed7ff7a?meta=false', function(data) {
+    $.each(data, function(key, value){
+     if (value.title.search(expression) != -1 || value.description.search(expression) != -1)
+     {
+      $('#result').append('<li class="list-group-item link-class"><img src="'+ value.images +'" height="80" width="80" class="img-thumbnail" /> '+value.title+'  <span class="text-muted"></span></li>');
+     }
+    });   
+   });
+  });
+
+  $('#result').on('click', 'li', function() {
+   var click_text = $(this).text().split('|');
+   $('#search').val($.trim(click_text[0]));
+   $("#result").html('');
+  });
+ });
