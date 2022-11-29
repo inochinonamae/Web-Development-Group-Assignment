@@ -268,6 +268,8 @@ li img {
 }
 
 
+
+
 .display_individual_container img {
     align-items: center;
     justify-content: center;
@@ -316,5 +318,6 @@ li {
 footer {
     background-color: lightyellow;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Gotham Book",Helvetica,Arial,sans-serif;
+    
 }
