@@ -1,0 +1,29 @@
+@media screen and (min-width:1000px) and (max-width: 12000px){
+.login{
+ float: left;
+ position: relative;
+ top:80px;
+ left: 210px;
+}
+.loginn{
+    float:right;
+    position:relative;
+    left: 610px;
+    bottom:350px;
+}
+}
+
+@media screen and (min-width:1000px) and (max-width: 1200px){
+    .login{
+     float: left;
+     position: relative;
+     top:80px;
+     left: 110px;
+    }
+    .loginn{
+        float:right;
+        position:relative;
+        left: 510px;
+        bottom:350px;
+    }
+    }
