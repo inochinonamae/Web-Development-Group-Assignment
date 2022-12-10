@@ -1,4 +1,6 @@
-
+<html>
+    <head>
+        <script>
         document.addEventListener("DOMContentLoaded", function() {
 
 var xhr = new XMLHttpRequest();
@@ -36,12 +38,9 @@ xhr.onload = function () {
     searchResult.innerHTML = '';
     for (var i = 0; i < data.length; i++) {
       if (data[i].title.toLowerCase().includes(searchBar.value.toLowerCase())) {
-        var searchResultlink = document.createElement('a');
-        searchResultlink.setAttribute('href', data[i].link);
-        searchResult.appendChild(searchResultlink);
         var searchResultItem = document.createElement('div');
         searchResultItem.setAttribute('class', 'searchResultItem');
-        searchResultlink.appendChild(searchResultItem);
+        searchResult.appendChild(searchResultItem);
         var searchResultItemImage = document.createElement('img');
         searchResultItemImage.setAttribute('src', data[i].images);
         searchResultItem.appendChild(searchResultItemImage);
@@ -59,3 +58,9 @@ xhr.onload = function () {
 };
 xhr.send();
 });
+        </script>
+    </head>
+    <body style="margin: 0;">
+       
+    </body>
+</html>
